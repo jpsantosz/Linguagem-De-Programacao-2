@@ -49,9 +49,13 @@ public class Aluno {
         return (nota1 + nota2)/2;
     }
 
-    public boolean compararNomes(Aluno outroAluno) {
-        return this.nome.equals(outroAluno.getNome());
-    }
+    public boolean compararNomes(String n) {
+        if (nome.equalsIgnoreCase(n))
+            return true;
+        else
+            return false;
+        }
+        
 
     public void exibirDados() {
         System.out.println("Matrícula: " + matricula);
