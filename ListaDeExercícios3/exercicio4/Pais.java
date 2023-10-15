@@ -1,15 +1,18 @@
-package ListaDeExercícios3;
+package ListaDeExercícios3.exercicio4;
 
+//declarando as variáveis do objeto País
 public class Pais {
     private String sigla;
     private String nome;
     private int populacao;
     private double dimensao;
 
+    //construtor default
     public Pais() {
 
     }
 
+    //construtor normal
     public Pais(String sigla, String nome, int populacao, double dimensao) {
         this.sigla = sigla;
         this.nome = nome;
@@ -17,6 +20,7 @@ public class Pais {
         this.dimensao = dimensao;
     }
 
+    //getters e setters
     public String getSigla() {
         return sigla;
     }
@@ -48,10 +52,14 @@ public class Pais {
     public void setDimensao(double dimensao) {
         this.dimensao = dimensao;
     }
+
+    //método para calcular a densidade populacional
     public double calcularDensidade() {
         double den = this.populacao/this.dimensao;
         return den;
     }
+
+    //método para imprimir os dados do país
     public void exibirDados() {
         System.out.println("Sigla: " + this.sigla);
         System.out.println("Nome: " + this.nome);

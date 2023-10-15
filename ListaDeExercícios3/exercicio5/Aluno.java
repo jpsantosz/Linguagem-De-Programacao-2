@@ -1,4 +1,4 @@
-package ListaDeExercícios3;
+package ListaDeExercícios3.exercicio5;
 
 public class Aluno {
     private int matricula;
@@ -56,7 +56,6 @@ public class Aluno {
             return false;
         }
         
-
     public void exibirDados() {
         System.out.println("Matrícula: " + matricula);
         System.out.println("Nome: " + nome);

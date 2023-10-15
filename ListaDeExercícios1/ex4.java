@@ -10,23 +10,24 @@ public class ex4 {
         int par = 0;
         int impar = 0;
 
-        System.out.println("Digite um número: ");
-        int num = sc.nextInt();
+        int num;
 
-        while (num > 0) {
+        do {
             System.out.println("Digite um número: ");
             num = sc.nextInt();
-            if (num % 2 == 0) {
-                par++;
+            if (num > 0) {  // Adicionado para evitar contar o último número digitado duas vezes
+                if (num % 2 == 0) {
+                    par++;
+                } 
+                else {
+                    impar++;
+                }
             }
-            else {
-                impar++;
-            }
-        }
+        } while (num > 0);
+
         System.out.println("Quantidade de pares: " + par);
         System.out.println("Quantidade de ímpares: " + impar);
 
         sc.close();
     }
 }
-

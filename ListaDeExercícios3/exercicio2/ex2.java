@@ -6,7 +6,7 @@
 //e) Se a string digitada termina com “O” (ignorando maiúsculas/minúsculas).
 //f) Se a string é um palíndromo ou não. 
 
-package ListaDeExercícios3;
+package ListaDeExercícios3.exercicio2;
 
 import java.util.Scanner;
 
