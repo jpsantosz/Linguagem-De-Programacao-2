@@ -8,10 +8,12 @@ public class Circulo {
     public double raio;
     public String cor;
 
+    //construtor default
     public Circulo() {
 
     }
 
+    //construtor padrão
     public Circulo(double raio, String cor) {
         this.raio = 1;
         this.cor = "vermelho";
@@ -33,6 +35,7 @@ public class Circulo {
         this.cor = cor;
     }
 
+    //método para calcular a área
     public double calcularArea() {
         double area = 2 * Math.PI * raio * raio;
         return area;

@@ -70,5 +70,6 @@ public class Jogador {
         System.out.println("Nacionaliade: " + nacionalidade);
         System.out.println("Altura: " + altura);
         System.out.println("Peso: " + peso);
+        System.out.println("Imc: " + calcularImc());
     }
 }

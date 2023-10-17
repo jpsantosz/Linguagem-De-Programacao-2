@@ -3,15 +3,19 @@
 
 package ListaDeExercícios3.exercicio1;
 
-import java.util.Arrays;
-
 public class ex1 {
     public static void main(String[] args) {
-        int[] Numeros = new int[50];
-        for (int i = 0; i < Numeros.length; i++) {
-            Numeros[i] = 101 + i;
+        int[] vetor = new int[50];
+
+        // Preenchendo o vetor com os números de 101 a 150
+        for (int i = 0; i < vetor.length; i++) {
+            vetor[i] = 101 + i;
         }
-        System.out.println("Vetor: ");
-        System.out.println(Arrays.toString(Numeros));
+
+        // Exibindo os valores do vetor
+        System.out.println("Valores do vetor:");
+        for (int i = 0; i < vetor.length; i++) {
+            System.out.println("Posição " + i + ": " + vetor[i]);
+        }
     }
 }
